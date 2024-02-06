@@ -2,9 +2,12 @@ const express = require('express')
 const app = express()
 const uuid= require('uuid')
 const port = 3001
+const cors = require('cors')
+
 
 
 app.use(express.json())
+app.use(cors())
 
 const users = []
 
